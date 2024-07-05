@@ -1,0 +1,649 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+body{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* navbar */
+header{
+       background-image: linear-gradient(rgba(-10, 0, 0, -0.5),rgba(255, 255, 255, -0.5)), url("head.jpg") ;
+       background-repeat: no-repeat;
+       background-size:cover;
+       height: 800px;
+}
+nav a img{
+   filter:drop-shadow(1px 0px 1px #FFB)
+}
+nav{
+   overflow: auto;
+   display: flex;
+   justify-content: space-between;
+}
+nav a{
+   color:#ffffff;
+   text-decoration: none;
+}
+nav ul{
+   float:right;
+   list-style: none;
+}
+nav ul li{
+   display:inline-block;
+}
+nav ul li a {
+  font-size: 17px;
+  padding: 5px;
+  margin-top: 43px;
+   text-align: center;
+   display: block;
+   transition: 0.5s all;
+}
+nav ul li a:hover{
+    border-bottom: solid #ffffff ;
+    opacity: 0.6;
+}
+/* quality */
+.quality{
+   color: #ffffff;
+   margin: 10% 31% 0 20px ;
+   line-height: 189%;
+}
+.quality h1{
+   font-size: 64px;
+   padding-bottom:45px ;
+   font-style: oblique;
+}
+.quality h3 {
+   padding-left: 8px ;
+
+}
+ .quality p {
+   padding-left: 25px ;
+   padding-bottom:25px ;
+}
+.quality .button {
+   border-radius: 9px;
+   background-color: #F4511E;
+   border: none;
+   color: #FFFFFF;
+   text-align: center;
+   font-size: 14px;
+   padding: 15px;
+   width: 187px;
+   transition: all 0.8s;
+   cursor: pointer;
+   margin: 13pX;
+ }
+  .button span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.5s;
+ }
+ 
+  .button span:after {
+   content: '\00bb';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -20px;
+   transition: 0.9s;
+ }
+ 
+  .button:hover span {
+   padding-right: 20px;
+   font-size: 16px;  
+ }
+ 
+  .button:hover span:after {
+   opacity: 1;
+   right: 0;
+ }
+ .margin{
+  padding-bottom: 350px;
+ }
+ /* Branches */
+ .img-Branches{
+   background-image: url(Premium\ Photo\ _\ Close-up\ spoons\ with\ spices\ powder\ and\ condiments\ spread\ on\ table.jpeg);
+   background-repeat: no-repeat;
+   background-size:cover;
+ }
+ .Branches{
+   margin: 20px;
+   padding-bottom: 20px;
+ }
+ .Branches h1 , .menu h1 ,.PROMOTIONS h1 , .Cerees h1{
+   font-size: 72px;
+   background-image:url(steamy-slice-pizza-with-stringy-cheese-fresh-toppings-is-lifted-high.jpg) ;
+   background-size:cover;
+   background-clip:text ;
+   -webkit-background-clip: text;
+   color: transparent;
+   text-align: center;
+}
+ .Branches-VISIT{
+   display: flex;
+   justify-content: space-evenly;
+ }
+ .slideshow-container {
+   position: relative;
+   border: 1px solid #f1f1f1f1;
+   box-shadow:  4px 5px 20px 4px #b68c8c;
+   border-radius: 20px;
+   width: 600px;
+   height: 300px;
+ }
+ .slideshow-container:hover {
+  box-shadow: inset  0px -1px 20px 0px #dcd2d2;
+ }
+ 
+ /* Slides */
+ .mySlides {
+  padding: 59px;
+  text-align: center;
+  line-height: 23px
+ }
+ .mySlides h3{
+  margin-bottom:5px ;
+ }
+ 
+ /* Next & previous buttons */
+ .prev, .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   margin-top: -30px;
+   padding: 16px;
+   color: #d7935a;
+   font-weight: bold;
+   font-size: 20px;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+ }
+ 
+ /* Position the "next button" to the right */
+ .next {
+   position: absolute;
+   right: 0;
+   border-radius: 3px 0 0 3px;
+ }
+ 
+ /* On hover, add a black background color with a little bit see-through */
+ .prev:hover, .next:hover {
+   background-color: #873e0052;
+   color : white;
+ }
+ 
+ /* The dot/bullet/indicator container */
+ .dot-container {
+     text-align: center;
+     padding: 25px;
+ }
+ 
+ /* The dots/bullets/indicators */
+ .dot {
+   cursor: pointer;
+   height: 20px;
+   width: 20px;
+   margin: 0 15px;
+   background-color: #f57c0014;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+ }
+  .active, .dot:hover {
+   background-color: #E1742D;
+ }
+
+ .phone {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+/* meuo */
+.menu{
+  background-image: url(menu/Screenshot\ 2024-06-10\ 235555.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+
+}
+.our-menu{
+  display: flex;
+  padding: 10px;
+  justify-content: space-evenly;
+  
+}
+ .border{
+  border: 1px solid #d8a07a;
+  padding: 10px;
+  border-radius: 15px ;
+}
+.border h4{
+  text-align: center;
+  font-size: 12px;
+  font-family: "Playwrite FR Moderne", cursive;
+}
+.border:hover{
+  border: 1px solid #e35f07;
+  transform: scale(0.96);
+}
+.our-menu .button{
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+.our-menu .button a{
+  text-decoration: none;
+  color: white;
+}
+.our-menu .button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+.our-menu .button:active {
+  transform: scale(0.95);
+}
+/* PROMOTIONS */
+
+.imgrool {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  gap: 10px;
+
+  > div {
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 5px #ffdba9;
+    position: relative;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+      background: url("prometions/item1.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(2) {
+      background: url("prometions/item2.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(3) {
+      background: url("prometions/item3.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(4) {
+      background: url("prometions/item4.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(5) {
+      background: url("prometions/item7.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(6) {
+      background: url("prometions/item8.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(7) {
+      background: url("prometions/item9.jpg")
+        no-repeat 50% / cover;
+    }
+    &:hover {
+      flex: 0 0 450px;
+      box-shadow: 1px 3px 5px #f4d1a2;
+      transform: translatey(-30px);
+    }
+
+    &:hover .content {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+  }
+}
+
+
+/* Cerees */
+.Information{
+  padding-left: 40px;
+  margin-right: 90px;
+}
+.Information p a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+ul.style-li {
+  padding-left:35px ;
+  padding-top: 10px;
+  list-style-type: square;
+}
+input {
+  caret-color: rgb(255, 98, 0);
+}
+.Contact-information {
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    place-items: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+.Contact {
+  position: relative;
+  height: 459px;
+  border-radius: 20px;
+  padding: 95px;
+  background: #ecf0f3;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+.inputs {
+  margin-top: -49px;
+}
+label, input, button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+label {
+  text-align: left;  
+  margin-bottom: 4px;
+}
+label:nth-of-type(2) {
+  margin-top: 12px;
+}
+input::placeholder {
+  color: gray;
+}
+input {
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 20px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+.send {
+  color: white;
+  margin-top: 20px;
+  background: #E1742D;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+}
+.send:hover {
+  box-shadow: none;
+}
+.SMS{
+  text-align: left;
+  opacity: 0.4;
+  padding:0 20px 20px;
+  font-size: 12px;
+  margin-right: 10%;
+}
+footer{
+       background-image:  url(head.jpg);
+       background-repeat: no-repeat;
+       background-size:cover;
+       box-shadow:-1PX -8PX 20PX 0PX rgba(0, 0, 0, .35);
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+      }
+footer ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  align-items: center;  
+  font-size: 15px;
+  padding: 20px;
+  margin-top: 18px;
+  display: block;
+  transition: 0.5s all;
+}
+footer ul li{
+  display:inline-block;
+}
+footer ul li a:hover{
+   opacity: 0.6;
+}
+ .socail ,i {
+    padding: 15px;
+}
+.socail a{
+margin: 10px;
+}
+i{
+  font-size: 10px;
+  color: #fff;
+}
+.nn{
+    display: none;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  display: grid;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+@media  screen and (max-width: 990px) {
+  .menu , .border {
+    margin: 2px;
+  }
+  .our-menu {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 222px);
+    justify-content: space-around;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    margin: -3px;
+    padding: 19px;
+    height: 880px;
+    justify-content: space-evenly;
+}
+}
+@media  screen and (max-width: 790px) {
+  .nn{
+    margin: 20px 20px 0 0 ;
+    display: inline-flex;
+  }
+  .mm{
+    display: none;
+  }
+  .quality {
+    color: #ffffff;
+    margin: 10% 12% 0 12px;
+  }
+  .overlay  {
+    display: block;
+    font-size: 20px
+  }
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 1px;
+  }
+  .mySlides{
+    padding: 30% 0;
+  }
+  .Branches-VISIT div a img{
+    height: 200px;
+    width: 200px;
+  }  .Branches-VISIT {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+  }
+  .slideshow-container { 
+    width: 369px;
+    height: 413px;
+  }
+  .menu {
+    margin: 5px;
+  }
+  .Branches h1, .menu h1, .PROMOTIONS h1, .Cerees h1 {
+    font-size: 40px;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: repeat(2,200px);
+    margin: -3px;
+    padding: 19px;
+    height: 880px;
+    justify-content: space-evenly;
+  }
+  .container img {
+    width: 200px;
+    height: 200px;
+  }
+  .item-1 ,.item-7 , .item-2 , .item-6,  .item-3 ,.item-5  , .item-4{
+    transform: translateX(-50%);
+    margin:10px 85px -5px 92px;    ;
+    opacity: 1;
+  }
+  .our-menu{
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2,222px);    
+    justify-content: space-between;
+  }
+  footer{
+    margin: 5px;
+  }
+  footer ul li a {    
+    font-size: 12px;
+    padding: 6px;
+    margin-top: 12px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  margin: -3px;
+  padding: 19px;
+  height: 880px;
+  justify-content: space-evenly;
+}
+}
+@media  screen and (max-width: 450px) {
+  .nn{
+    margin: 20px 20px 0 0 ;
+    display: inline-flex;
+  }
+  .mm{
+    display: none;
+  }
+  .menu , .border {
+    margin: 2px;
+  }
+  .quality h1 {
+    font-size: 43px;
+  }
+  .quality p {
+    padding-bottom: 5px;
+    line-height: 27px;
+  }
+  .our-menu {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 222px);
+    justify-content: space-around;
+  }
+  .container {
+    grid-template-columns: repeat(1, 200px);
+    height: 1547px;
+    justify-content: center;
+  }
+  .Information {
+    margin-right: 10px;
+  }
+  .Contact {
+    padding: 67px;
+  }
+  .Contact-information {
+    height: 81vh;
+  }
+  footer {
+    margin: 0px;
+}
+footer ul li a {
+  display: grid;
+  grid-template-columns: max-content;;
+}
+i{
+margin-bottom: 30px;
+}
+}
